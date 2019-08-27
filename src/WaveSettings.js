@@ -22,6 +22,16 @@ const WaveSettings = ({ settings, changeSettings, deleteWave, index }) => {
                 type="range"
                 onChange={changeSetting}
             />
+            <h4>Node count: {settings.nodeCount}</h4>
+            <input
+                min="2"
+                max="100"
+                type="range"
+                value={settings.nodeCount}
+                name="nodeCount"
+                step="1"
+                onChange={changeSetting}
+            />
             <h4>Speed: {settings.speed}ms</h4>
             <input
                 min="1000"

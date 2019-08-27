@@ -48,8 +48,12 @@ h1 {
     grid-row-end: 3;
     grid-column-start: 2;
     grid-column-end: 3;
+    overflow-y: auto;
 }
 
 .settings__wave {
-    border: 1px solid black;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(5px);
+    padding: 10px;
+    border-radius: 5px;
 }
